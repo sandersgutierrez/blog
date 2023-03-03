@@ -1,0 +1,78 @@
+@import './variables';
+@import './fonts';
+@import './mixins';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font: normal normal normal 16px/1.5 $font-family, sans-serif;
+    min-height: 100vh;
+    max-width: 100vw;
+    overflow-x: hidden;
+    background-color: $body-bg-color;
+    color: $color-main;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: dark;
+    }
+}
+
+#__next {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+}
+
+.header {
+    background-color: #222;
+    color: white;
+
+    .logo {
+        display: grid;
+        grid-template-columns: min-content min-content;
+        align-items: center;
+        font-family: 'Righteous';
+        color: #f9af16;
+        font-size: 1.1em;
+        gap: 10px;
+    }
+
+    .menu {
+        ul {
+            list-style: none;
+
+            li {
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+
+    a {
+        color: $base-color;
+        cursor: pointer;
+    }
+}

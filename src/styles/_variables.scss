@@ -1,4 +1,10 @@
-$fontFamilyDefault: 'Roboto';
-$fontSizeDefault: 16px;
-
-$backgroundColor: #f9f9f9;
+$color-main: #444;
+$body-bg-color: #f9f9f9;
+$base-color: #f9af16;
+$breakpoints: (
+    sm: 540px,
+    md: 768px,
+    lg: 1024px
+);
+$font-family: 'Work Sans';
+$font-size: 16px;
